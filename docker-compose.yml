@@ -1,0 +1,17 @@
+wordpress:
+  build: . 
+  links:
+    - db:mysql
+nginx:
+  image: raulr/nginx-wordpress 
+  links:
+   - wordpress
+  ports:
+   - "8080:80"
+  volumes_from:
+   - wordpress
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: ololo 
+
