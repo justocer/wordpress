@@ -1,1 +1,1 @@
-# You need to add your dir in dockerfile and choose theme in appearance, after setup :)
+# You need to change your dir in dockerfile and choose theme in appearance, after setup :)
